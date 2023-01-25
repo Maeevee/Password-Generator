@@ -90,7 +90,15 @@ var upperCasedCharacters = [
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+  var passwordLength = prompt("Enter a number between 10 and 64: ");
+  let userChoices = {
+    upperCase: false,
+    lowerCase: false,
+    special: false,
+    numeric: false,
+  };
 
+  
 }
 
 // Function for getting a random element from an array
