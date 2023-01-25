@@ -112,6 +112,11 @@ function getPasswordOptions() {
   userChoices.special = confirm("Include special characters in the password?");
   userChoices.numeric = confirm("Include numbers in the password?");
 
+  if(!userChoices.upperCase && !userChoices.lowerCase && !userChoices.special && !userChoices.numeric){
+    alert("You must choose at least one option: uppercase letters, lowercase letters, special characters or numbers");
+    return getPasswordOptions();
+  }
+
 }
 
 
