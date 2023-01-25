@@ -133,8 +133,11 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
-
-}
+  var password = "";
+  var passwordLength = passwordOptions.passwordLength;
+  var userChoices = passwordOptions.userChoices;
+  }
+  
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
