@@ -136,8 +136,28 @@ function generatePassword() {
   var password = "";
   var passwordLength = passwordOptions.passwordLength;
   var userChoices = passwordOptions.userChoices;
+  var currentLength = 0;
+
+  while(currentLength < passwordLength) {
+    if (userChoices.upperCase && currentLength < passwordLength) {
+      password += getRandom(upperCasedCharacters);
+      currentLength++;
+    }
+    if (userChoices.lowerCase && currentLength < passwordLength) {
+      password += getRandom(lowerCasedCharacters);
+      currentLength++;
+    }
+    if (userChoices.special && currentLength < passwordLength) {
+      password += getRandom(specialCharacters);
+      currentLength++;
+    }
+    if (userChoices.numeric && currentLength < passwordLength) {
+      password += getRandom(numericCharacters);
+      currentLength++;
+    }
   }
-  
+  return password;
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
