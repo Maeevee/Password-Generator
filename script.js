@@ -98,7 +98,14 @@ function getPasswordOptions() {
     numeric: false,
   };
 
-  
+  do {
+    if (!isNaN(passwordLength) && passwordLength >= 10 && passwordLength <= 64) {
+      alert("Input accepted: " + passwordLength);
+    } else {
+      alert("Invalid input, please try again.");
+      passwordLength = prompt("Enter a number between 10 and 64: ");
+    }
+  } while (!(!isNaN(passwordLength) && passwordLength >= 10 && passwordLength <= 64));
 }
 
 // Function for getting a random element from an array
