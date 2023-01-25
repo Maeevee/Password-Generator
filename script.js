@@ -117,8 +117,14 @@ function getPasswordOptions() {
     return getPasswordOptions();
   }
 
+  return {
+    passwordLength: passwordLength,
+    userChoices: userChoices,
+  };
+
 }
 
+const passwordOptions = getPasswordOptions();
 
 // Function for getting a random element from an array
 function getRandom(arr) {
