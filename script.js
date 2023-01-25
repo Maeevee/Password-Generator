@@ -106,7 +106,14 @@ function getPasswordOptions() {
       passwordLength = prompt("Enter a number between 10 and 64: ");
     }
   } while (!(!isNaN(passwordLength) && passwordLength >= 10 && passwordLength <= 64));
+
+  userChoices.upperCase = confirm("Include uppercase letters in the password?");
+  userChoices.lowerCase = confirm("Include lowercase letters in the password?");
+  userChoices.special = confirm("Include special characters in the password?");
+  userChoices.numeric = confirm("Include numbers in the password?");
+
 }
+
 
 // Function for getting a random element from an array
 function getRandom(arr) {
