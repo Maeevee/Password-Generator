@@ -14,7 +14,13 @@ body,
 
 body {
   font-family: sans-serif;
-  background-color: #f9fbfd;
+  background-color: #2b534a;
+  
+}
+
+h1, h2, button {
+  color: #ecf0f9;
+  font-weight: 700;
 }
 
 .wrapper {
@@ -40,6 +46,7 @@ header {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  background-color: #b1a28f;
 }
 
 .card-header::after {
@@ -74,11 +81,10 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #eb4d0c;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
